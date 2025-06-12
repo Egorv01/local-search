@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E5E7483F2DFA05C0005E2D00 /* MLX in Frameworks */ = {isa = PBXBuildFile; productRef = E5E7483E2DFA05C0005E2D00 /* MLX */; };
+		E5E74BF02DFA0619005E2D00 /* MLXEmbedders in Frameworks */ = {isa = PBXBuildFile; productRef = E5E74BEF2DFA0619005E2D00 /* MLXEmbedders */; };
+		E5E7534F2DFA120C005E2D00 /* Transformers in Frameworks */ = {isa = PBXBuildFile; productRef = E5E7534E2DFA120C005E2D00 /* Transformers */; };
+		E5E753522DFA194F005E2D00 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = E5E753512DFA194F005E2D00 /* SwiftSoup */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E5E7482F2DFA010E005E2D00 /* WWDC-MLX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WWDC-MLX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E7534F2DFA120C005E2D00 /* Transformers in Frameworks */,
+				E5E753522DFA194F005E2D00 /* SwiftSoup in Frameworks */,
+				E5E74BF02DFA0619005E2D00 /* MLXEmbedders in Frameworks */,
+				E5E7483F2DFA05C0005E2D00 /* MLX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,10 @@
 			);
 			name = "WWDC-MLX";
 			packageProductDependencies = (
+				E5E7483E2DFA05C0005E2D00 /* MLX */,
+				E5E74BEF2DFA0619005E2D00 /* MLXEmbedders */,
+				E5E7534E2DFA120C005E2D00 /* Transformers */,
+				E5E753512DFA194F005E2D00 /* SwiftSoup */,
 			);
 			productName = "WWDC-MLX";
 			productReference = E5E7482F2DFA010E005E2D00 /* WWDC-MLX.app */;
@@ -94,6 +109,12 @@
 			);
 			mainGroup = E5E748262DFA010E005E2D00;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E5E7483D2DFA01B5005E2D00 /* XCRemoteSwiftPackageReference "mlx-swift" */,
+				E5E74BEE2DFA0619005E2D00 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */,
+				E5E7534D2DFA120C005E2D00 /* XCRemoteSwiftPackageReference "swift-transformers" */,
+				E5E753502DFA194F005E2D00 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E5E748302DFA010E005E2D00 /* Products */;
 			projectDirPath = "";
@@ -254,10 +275,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GYRQ523BUJ;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -285,10 +305,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GYRQ523BUJ;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,6 +348,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E5E7483D2DFA01B5005E2D00 /* XCRemoteSwiftPackageReference "mlx-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.25.4;
+			};
+		};
+		E5E74BEE2DFA0619005E2D00 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift-examples/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.25.4;
+			};
+		};
+		E5E7534D2DFA120C005E2D00 /* XCRemoteSwiftPackageReference "swift-transformers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huggingface/swift-transformers";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.21;
+			};
+		};
+		E5E753502DFA194F005E2D00 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5E7483E2DFA05C0005E2D00 /* MLX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5E7483D2DFA01B5005E2D00 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLX;
+		};
+		E5E74BEF2DFA0619005E2D00 /* MLXEmbedders */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5E74BEE2DFA0619005E2D00 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */;
+			productName = MLXEmbedders;
+		};
+		E5E7534E2DFA120C005E2D00 /* Transformers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5E7534D2DFA120C005E2D00 /* XCRemoteSwiftPackageReference "swift-transformers" */;
+			productName = Transformers;
+		};
+		E5E753512DFA194F005E2D00 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5E753502DFA194F005E2D00 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5E748272DFA010E005E2D00 /* Project object */;
 }
